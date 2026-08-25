@@ -1,0 +1,112 @@
+.page-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+}
+
+.task-section {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.task-section h1 {
+    margin-bottom: 24px;
+}
+
+.timer-controls,
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 12px;
+}
+
+.timer-controls input,
+.form input[type='number'] {
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #bfc5cc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    min-height: 40px;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 4px;
+    background: #2563eb;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 48px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    min-width: 76px;
+}
+
+.value {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.label {
+    margin-top: 8px;
+    color: #667085;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.form {
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form>label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+}
+
+fieldset {
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 8px 12px;
+    border: 1px solid #bfc5cc;
+    border-radius: 4px;
+}
+
+fieldset label {
+    white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+    .timer {
+        gap: 10px;
+    }
+
+    .field {
+        min-width: 62px;
+    }
+
+    .value {
+        font-size: 30px;
+    }
+}
